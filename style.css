@@ -1,0 +1,120 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    justify-content: center;
+    background-color: rgb(247, 237, 202);
+    align-items: center;
+    font-family: Lato, sans-serif;
+}
+
+.players-area {
+    display: flex;
+    position: relative; 
+    width: 80%;
+    height: 95%;
+    border: 2px solid #000;
+    margin : 30px auto;
+    align-items: center;
+    box-shadow: 5px 5px 10px #222;
+}
+
+/*Eléments du haut de chaque joueur*/
+
+.players {
+    flex: auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player1 {
+    background-color: lightcoral;
+}
+
+.player2 {
+    background-color:  bisque;   
+}
+.players-total-score {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.score {
+    padding-top: 2rem;
+}
+
+/*Eléments du bas de chaque joueur*/
+
+.players-temp-score {
+    margin-top: 4rem;
+    width : 50%;
+    background-color: red;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.temp-score {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+
+/*Elément et icones du milieu*/
+
+.new-game-plus {
+    width: 2rem;
+    height: 2rem;
+}
+.btn {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 43%;
+    width: 10rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.dice {
+    position: absolute;
+    left: 46%;
+    top: 33%;
+    width: 6rem;
+    height: 6rem;
+    background: white;
+    border-radius: 1rem;
+}
+
+.roll-dice-picture {
+    width: 2rem;
+    height: 2rem;
+}
+
+.hold-picture {
+    width: 2rem;
+    height: 2rem;
+}
+ 
+.btn-newgame {
+    top: 4rem;
+}
+
+.btn-roll-dice {
+    top: 58%;
+}
+.btn-hold-score {
+    top: 75%;
+}
+
+@media screen and (max-width: 7689x){
+    .players-area {
+    margin : 0;
+}
+}
