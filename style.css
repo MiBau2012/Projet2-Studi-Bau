@@ -33,11 +33,11 @@ body {
 }
 
 .player1 {
-    background-color: lightcoral;
+    background-color: #84A59D;
 }
 
 .player2 {
-    background-color:  bisque;   
+    background-color:  #F38381;   
 }
 .players-total-score {
     position: relative;
@@ -49,12 +49,22 @@ body {
     padding-top: 2rem;
 }
 
+.green-dot1 {
+    width: 2rem;
+    height: 2rem;
+}
+
+.green-dot2 {
+    width: 2rem;
+    height: 2rem;
+}
+
 /*Eléments du bas de chaque joueur*/
 
 .players-temp-score {
     margin-top: 4rem;
     width : 50%;
-    background-color: red;
+    background-color: #f5c1c3;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
