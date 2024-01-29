@@ -87,14 +87,14 @@ body {
     position: absolute;
     align-items: center;
     justify-content: center;
-    left: 43%;
+    left: 45%;
     width: 10rem;
     padding: 0.5rem;
     cursor: pointer;
 }
 .dice {
     position: absolute;
-    left: 46%;
+    left: 47%;
     top: 33%;
     width: 6rem;
     height: 6rem;
