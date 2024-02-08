@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu de dé</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 710px)" href="style-desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -13,8 +14,8 @@
   
 
 <body>
-    <main class="players-area">
-        <section class="players player1">
+    <div class="players-area">
+        <div class="players player1">
             <div class="players-total-score">
                 <h1 class="player1-text">PLAYER 1<img class="green-dot1" src="assets/greendot.png" alt="go"></h1>
                 <p class="score" id="total-score-player1">0</p>
@@ -23,35 +24,33 @@
                 <h2 class="temp-score-text">CURRENT</h2>
                 <p class="temp-score" id="temp-score-player1">0</p>
             </div>
-        </section>
+        </div>
+   
+         
+            <!--La zone du milieu avec ses 4 éléments-->
+    <div class="buttons">
+        <button class="btn btn-newgame"><img class="new-game-plus" src="assets/addimg.svg" alt="start over"><pre> </pre> NEW GAME
+        </button>
+    
+        <div>   
+            <img  src="assets/dice5.svg" alt="a dice" class="dice"/>
+            <button class="btn btn-roll-dice"><img class="roll-dice-picture" src="assets/rolldiceimg.svg" alt="Roll the dice"><pre> </pre> ROLL DICE
+             </button>
+        </div> 
+             <button class="btn btn-hold-score"><img class="hold-picture" src="assets/holdimg.svg" alt="Hold the score"><pre> </pre> HOLD</button>
+     </div>
 
-        <section class="players player2">
-            <div class="players-total-score">
-                <h1 class="player2-text">PLAYER 2<img class="green-dot2" src="assets/greendot.png" alt="go"></h1>
-                <p class="score" id="total-score-player2">0</p>
-            </div> 
-             <div class="players-temp-score">
-                <h2 class="temp-score-text">CURRENT</h2>
-                <p class="temp-score" id="temp-score-player2">0</p>
-            </div>
-        </section>    
-    
-        <!--La zone du milieu avec ses 4 éléments-->
-
-        
-    <img  src="assets/dice5.svg" alt="a dice" class="dice"/>
-    <button class="btn btn-newgame"><img class="new-game-plus" src="assets/addimg.svg" alt="start over"><pre> </pre> NEW GAME
-     </button>       
-    
-    <button class="btn btn-roll-dice"><img class="roll-dice-picture" src="assets/rolldiceimg.svg" alt="Roll the dice"><pre> </pre> ROLL DICE
-     </button>
-        
-    <button class="btn btn-hold-score"><img class="hold-picture" src="assets/holdimg.svg" alt="Hold the score"><pre> </pre> HOLD</button>
-
-      
-    
-    </main>
-    
+    <div class="players player2">
+        <div class="players-total-score">
+            <h1 class="player2-text">PLAYER 2<img class="green-dot2" src="assets/greendot.png" alt="go"></h1>
+            <p class="score" id="total-score-player2">0</p>
+        </div> 
+         <div class="players-temp-score">
+            <h2 class="temp-score-text">CURRENT</h2>
+            <p class="temp-score" id="temp-score-player2">0</p>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+.players-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.players-area::before{
+    content: "";
+    position: absolute;
+    inset: 0 50% 0 0;
+    background-color: #84A59D;
+    z-index: -1;
+}
+
+.players-area::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 50%;
+    background-color: #F38381;
+    z-index: -1;
+}
+
+.buttons {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: min(4vw, 2rem);
+}
